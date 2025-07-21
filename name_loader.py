@@ -6,7 +6,7 @@ def load_names_from_csv(path):
             parts = line.strip().split()
             suffix = ""
             # Remove suffix if it's the last part and recognized
-            if parts and parts[-1].lower().strip(".") in suffixes:
+            if parts > 2:
                 suffix =parts[-1]
                 parts = parts[:-1] # Remove suffix
             
